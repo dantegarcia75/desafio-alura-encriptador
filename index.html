@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Desafio Alura Encriptador</title>
+</head>
+<body>
+    <header>
+        <img src="imagenes/Logo.svg" alt="logo alura">
+        <h1>Encriptador | Desencriptador</h1>        
+
+    </header>
+
+    <main>
+        <section class="input-section">
+            <!-- <div class="input-box"> -->
+                <div class="input-textarea-box">
+                    <textarea name="" id="texto-p-cifrar-desifrar" class="input-textarea" placeholder="Ingrese aquí el texto a engriptar o desencriptar"></textarea>
+                </div>
+                <div class="input-alert-box">
+                    <img src="imagenes/alerta.svg" alt="alerta">
+                    <span>Solo letras minúsculas y sin acento</span>
+                </div>
+                <div class="input-btns-box">
+                    <button id="encriptador-btn" onclick="btnEncriptar()">Encriptar</button>
+                    <button id="desencriptador-btn" onclick="btnDesencriptar()">Desencriptar</button>                
+                </div>
+            <!-- </div>             -->
+        </section>
+        <br>
+        <section class="output-section">
+            <!-- <div class="output-box"> -->
+                <div id="output-img-box">
+                    <img src="imagenes/cifrado-pngegg.png" alt="imagen con lupa" class="output-img">
+                </div>
+                <!-- <p>Texto Encriptado | Descencriptado:</p>  -->
+                
+                <div id="output-message-box">
+                    <h3>Ningún mensaje fue encontrado</h3>
+                    <p>Ingresa el texto que desea Encriptar o Desencriptar</p>
+                </div>
+                <div id="output-answer-box">
+                    <!-- <p id="respuesta" class="output-answer-text">holaaaaa</p> -->
+                    <textarea id="respuesta" class="output-answer-text" placeholder="Aqui se mostrará el texto encripatado o desencriptado"></textarea>
+
+                </div>
+                <!-- el boton copiar debería aparecer cuando se pudo cifrar / desifrar -->
+                <div id="output-btn-box">
+                    <button id="copy-btn" onclick="btnCopiar()">COPIAR</button>
+                </div>
+                
+            <!-- </div>         -->
+        </section>
+        
+    </main>
+    <footer >
+        <p class="copyright">&copy Dante García 2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
